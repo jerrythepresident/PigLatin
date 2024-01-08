@@ -1,11 +1,11 @@
 public void setup() 
 {
-	String[] lines = loadStrings("words.txt");
-	System.out.println("there are " + lines.length + " lines");
-	for (int i = 0 ; i < lines.length; i++) 
-	{
-	  System.out.println(pigLatin(lines[i]));
-	}
+  String[] lines = loadStrings("words.txt");
+  System.out.println("there are " + lines.length + " lines");
+  for (int i = 0 ; i < lines.length; i++) 
+  {
+    System.out.println(pigLatin(lines[i]));
+  }
 }
 public void draw()
 {
@@ -27,12 +27,12 @@ public String pigLatin(String word)
 //precondition: word is a valid String of length greater than 0
 //postcondition: returns the pig latin equivalent of sWord
 {
-	if(findFirstVowel(word) == -1)
-	{
-		return word + "ay";
-	}
-	else
-	{
-		return "ERROR!";
-	}
+  if(findFirstVowel(word) == -1)
+  {
+    return word + "ay";
+  }
+  else
+  {
+    return "ERROR!";
+  }
 }
