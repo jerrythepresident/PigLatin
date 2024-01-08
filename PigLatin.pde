@@ -21,8 +21,6 @@ public int findFirstVowel(String word){
             }
         }
         return -1;
-{
-	return -1;
 }
 
 public String pigLatin(String word)
