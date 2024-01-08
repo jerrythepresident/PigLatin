@@ -11,7 +11,7 @@ public void draw()
 {
         //not used
 }
-public int findFirstVowel(String word)
+public int findFirstVowel(String word){
 //precondition: sWord is a valid String of length greater than 0.
 //postcondition: returns the position of the first vowel in sWord.  If there are no vowels, returns -1
            for (int i = 0; i < word.length(); i++) {
