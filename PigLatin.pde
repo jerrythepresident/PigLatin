@@ -31,14 +31,14 @@ public String pigLatin(String word)
   {
     return word + "ay";
   }
-  else if(findFirstVowel(word) != -1){
+  else if(findFirstVowel(word) == 0){
     return word + "way";
   }
     else if(word.substring(0,2) == "qu"){
-    return word.substring(2) + "quay";
+    return word.substring(3) + "quay";
   }
       else if(findFirstVowel(word) != -1){
-    return word.substring(1) + word.substring(0,1) + "ay";
+    return word.substring(findFirstVowel(word)) + word.substring(0,findFirstVowel(word)) + "ay";
   }
   else
   {
