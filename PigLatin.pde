@@ -34,9 +34,9 @@ public String pigLatin(String word)
   else if(findFirstVowel(word) == 0){
     return word + "way";
   }
-    else if(word.substring(0,2) == "qu"){
-    return word.substring(3) + "quay";
-  }
+        if (word.startsWith("qu")) {
+            return word.substring(2) + "quay";
+        }
       else if(findFirstVowel(word) != -1){
     return word.substring(findFirstVowel(word)) + word.substring(0,findFirstVowel(word)) + "ay";
   }
